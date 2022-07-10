@@ -1,0 +1,71 @@
+# ##########################################################################################################
+# #												                                                         # #
+# #  ##        ##  #######  ##########       ##########  ##########  ##########    ########   ##         # #
+# #  ##        ##  ##       ##             ##          	    ##      ##          ##        ##  ##         # #
+# #  ##            ##       ##             ##		        ##      ##          ##        ##  ##         # #
+# #  ##        ##  #####    ######           ########       ##      ######      ##        ##  ##         # #
+# #  ##        ##  ##       ######                   ##     ##      ######      ############  ##	     # #
+# #  ##        ##  ##       ##                       ##     ##      ##          ##        ##  ##	     # #
+# #  ########  ##  ##       ##                       ##     ##      ##          ##        ##  ##         # #
+# #  ########  ##  ##       ##########     ##########       ##      ##########  ##        ##  ########   # #
+# #													                                                     # #
+# ##########################################################################################################
+#
+# Author: RETAMROVEC
+#
+# Translated config.yml
+#
+plugin:
+  version: null
+error:
+  amount_not_exist: '&cLS &a>> &7Write amount of hearts you want to give to another
+    player, each two numbers equals one heart!'
+  zero_health_ban: '&cLS &a>> &7You has been banned for zero hearts on server.'
+  without_perm: '&cLS &a>> &7You didn´t have enough permissions to do that.'
+  player_isnt_registered: '&cLS &a>> &7This player is not registered in configuration.'
+  cannot_use_shift: '&cLS &a>> &7Don´t use shift while crafting, for preventing bug,
+    this feature is disabled.'
+  too_much_hearts: '&cLS &a>> &7Because you had more HP than 40, your HP got cutted
+    to 20 HP.'
+  too_big_amount_of_hearts: '&cLS &a>> &7You writed too much HP, max amount of HP
+    you can write is 40.'
+  cant_withdraw_to_yourself: '&cLS &a>> &7Cant withdraw hearts to yourself. You must withdraw to any player, but not you.'
+  cannot_use_command: '&cLS &a>> &7You can´t use this command as console.'
+messages:
+  changed_amount_of_health: '&cLS &a>> &7Amount of health has been changed.'
+  heart_get: '&cLS &a>> &7You get one new heart.'
+  config_reloaded: '&cLS &a>> &7Config has been successfuly reloaded!'
+  update_available_notify: '&cLS &a>> &7New update is available, download new version
+    at &a/lifesteal spigotmc&7.'
+  #
+  # For both methods, there are available some placeholders.
+  # {target} = player, you giving a heart - work for one message (hearts_send
+  # {sender} = player, who gived you a heart - work for one message (hearts_get)
+  # {amount} = gived amount of hearts - work for both messages (hearts_sent & hearts_get)
+  #
+  hearts_get: '&cLS &a>> &7You get &c{amount} &7hearts from &a{sender}&7.'
+  hearts_sent: '&cLS &a>> &7You sent &c{amount} &7hearts to &a{target}&7.'
+  recipe_showed: '&cLS &a>> &7Recipe has been showed.'
+config:
+  #
+  # True = yes
+  # False = no
+  #
+  # If you selected true, then you will get always notified, when you join, if new version is on spigot.
+  # If you selected false, then nothing will happen, and you get notified about new version only in console.
+  #
+  # WARNING! This option works only for OP or players with lifesteal.admin, if you have "*" permission, it is like OP.
+  #
+  notify_op_updates: true
+developer:
+  #
+  # This is only option for developer, you can enable it but you dont need it for features.
+  #
+  enable: false
+player:
+  #
+  # This section is about how many hearts player have. If you delete config, then data will be deleted with it too.
+  # You can change amount of hearts, but dont use 0 or 40 but not 41 and more.
+  # Default amount of hearts is 20, that is default amount of hearts for vanilla, and non-modified hearts too.
+  #
+  example: 20

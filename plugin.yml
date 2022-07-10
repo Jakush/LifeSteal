@@ -1,0 +1,10 @@
+main: retamrovec.lifesteal.spigot.LifeSteal
+name: LifeSteal
+version: 1.19-V6.1
+api-version: 1.18
+author: RETAMROVEC
+commands:
+  lifesteal:
+    aliases:
+    - ls
+    - lfs
